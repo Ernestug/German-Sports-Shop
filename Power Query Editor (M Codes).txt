@@ -1,0 +1,8 @@
+let
+    Source = Csv.Document(File.Contents("C:\Users\user\OneDrive\Documents\ERNEST PROJECTS\SPORTSPHERE\customers.csv"),[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}}),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"customerID", type text}, {"companyName", type text}, {"contactName", type text}, {"contactTitle", type text}, {"city", type text}, {"country", type text}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Changed Type1",{{"customerID", "Customer ID"}, {"companyName", "Company"}, {"contactName", "Contact Name"}, {"contactTitle", "Contact Title"}, {"city", "City"}, {"country", "Country"}})
+in
+    #"Renamed Columns"
