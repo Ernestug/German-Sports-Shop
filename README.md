@@ -13,11 +13,16 @@ At the heart of this sporting fervor lies Sportsphere GmbH, a multinational spor
 
 The original data folder downloaded from Maven Analytics had 7 different CSV files (tables), containing information about a food supplying company. This information was transformed using tools like Excel, SQL, and Power Query; tailoring to fit the data obtainable from a sports retail company. Some of these transformations include:
 
-- Removal of unwanted columns: Some columns were removed such as "Reports to" & "Country" column from the Employees table, "Description" column from the Product Categories table, "QuantityperUnit", "UnitPrice" & "Discontinued" columns from the Products table (columns for price and quantity were already represented in the orders table), and "Contact Name", "Contact Title" & "City" columns from the Customers table. The removal of these columns were carried out in Microsoft Excel.
+- Removal of unwanted columns: Some columns were removed such as: (1) "Reports to", "Country", and "City" columns from the Employees table. (2) "Description" column from the Product Categories table (3) "QuantityperUnit", "UnitPrice", and "Discontinued" columns from the Products table (columns for price and quantity were already represented in the orders table) and (4) "Contact Name", "Contact Title", and "City" columns from the Customers table. The removal of these columns were carried out in Microsoft Excel.
+
 - Replacing values (Products/Categories): Using AI and natural language processing from Chat GPT, a new data was generated on products and categories for a sports shop using specific requirements. These data was used to replace the initial product names and categories (food supply/groceries data) from the original data. The replacing of values was carried out using MySQL workbench and the script have been attached to this repository.
+
 - Replacing values (Date columns): The original data contained date values from July 2013 to May 2015. These date values were transformed using Microsoft Excel. Firstly, dates from 2013 were appended to dates in 2015. Thereafter, 2014 and 2015 were replaced with 2022 and 2023 respectively.
+
 - Merging tables (Products & Categories): The Products and Product Categories tables were merged together to form a new table named "Products". All columns from both tables were duly represented in the new table such as Product ID, Product Name, Category, and Brand (a new column which was obtained from the AI generated data from Chat GPT). This transformation was done using the XLOOKUP function in Excel.
+
 - Merging tables (Orders & Order Details): Using SQL joins, the Orders and Order Details tables were also merged together with all columns from the two tables represented in the new table named as "Orders (joined)". The SQL script employed in achieveing this has been attached to this repository.
+
 - Creating new table: A new table named as "Brand Logos" was created. This table contains two columns - the name of the brand and the URL of the brand logo.
 
 After all transformations have been done, six tables were imported to begin the analysis and visualization. These tables and their columns are highlighted below:
