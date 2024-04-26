@@ -1,0 +1,89 @@
+## MEASURES
+
+1. Total Orders =
+DISTINCTCOUNT(orders[Order ID])
+
+2. Total Customers =
+COUNT(customers[Customer ID])
+
+3. Total Sales =
+SUM(orders[Net Sales])
+
+4. Total Shipping Cost =
+SUM(orders[Shipping Cost])
+
+5. Total Employees =
+COUNT(employees[Employee ID])
+
+6. Total Products =
+COUNT(products[Product ID])
+
+7. Previous Month Sales =
+CALCULATE(SUM(orders[Net Sales]),PREVIOUSMONTH('Calendar'[Date]))
+
+8. MoM Variance =
+VAR CurrentMonthSales = CALCULATE(SUM(orders[Net Sales]))
+VAR PrevMonthSales = CALCULATE(SUM(orders[Net Sales]), PREVIOUSMONTH('Calendar'[Date]))
+RETURN CurrentMonthSales - PrevMonthSales
+
+9. % MoM Variance =
+DIVIDE([MoM Variance],[Prev Month Sales])
+
+10. Discount Cost =
+VAR A = SUM(orders[Gross Sales])
+VAR B = SUM(orders[Net Sales])
+RETURN A - B
+
+11. Total Qty Ordered =
+SUM(orders[Quantity])
+
+12. 2022 Sales =
+CALCULATE(SUM(orders[Net Sales]), FILTER('Calendar', YEAR('Calendar'[Date]) = 2022))
+
+13. 2023 Sales =
+CALCULATE(SUM(orders[Net Sales]), FILTER('Calendar', YEAR('Calendar'[Date]) = 2023))
+
+14. % YoY Variance =
+DIVIDE(([2023 Sales] - [2022 Sales]), [2022 Sales])
+
+15. Unshipped Qty =
+CALCULATE(
+    SUM(orders[Quantity]),
+    FILTER(
+        orders,
+        ISBLANK(orders[Shipped Date])
+    )
+)
+
+16. Shipped Qty =
+[Total Qty Ordered] - [Unshipped Qty]
+
+17. Shipping Cost per Qty = DIVIDE([Total Shipping Cost],[Shipped Qty])
+
+
+
+## CALCULATED COLUMNS
+
+1. Net Sales =
+orders[Unit Price] * orders[Quantity] * (1-orders[Discount])
+
+2. Gross Sales =
+orders[Unit Price] * orders[Quantity]
+
+3. Lead Time =
+DATEDIFF(orders[Order Date], orders[Shipped Date],DAY)
+
+4. Day = FORMAT('Calendar'[Date], "dddd")
+
+5. Day Number = WEEKDAY('Calendar'[Date])
+
+
+
+## CALCULATED TABLE
+
+1. Calendar = ADDCOLUMNS CALENDARAUTO (),
+"Year", YEAR([Date]),
+"MonthNumber", MONTH([Date]),
+"Month", FORMAT ([Date],"MMMM"),
+"Quarter", FORMAT ([Date]),"\QQ"))
+
