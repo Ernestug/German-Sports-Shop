@@ -112,3 +112,38 @@ The Data Model was automatically created in Power BI. This clearly shows the rel
 
 ![](https://github.com/Ernestug/German-Sports-Shop/blob/main/Images/Data%20Model.png)
 
+
+
+## Data Analysis & Visualization
+
+After I completed the various data cleaning and transformations - getting new columns and measures, I proceeded to begin the analysis and visualization. To ensure easy navigation and adequate understanding of the project, I divided the visualizations into 4 dashboards. These dashboards were used to effectively visualize key insights from this analysis.
+
+Some Key Insights from the data visualization are summarized below:
+
+- **Overview:** The overview section shows that a total of €1.27M was generated in sales from 2155 orders. There was a 5% increase in sales from 2022 to 2023. This was as a result of more units of products sold in 2023. Also, all brands of sports products generated relatively close values in sales, with Puma generating the highest percentage (24%) of sales - €304K and Under Armour generating the lowest value (16%) - €204K.  USA and Germany were the top 2 locations by sales, this could be as a result of the origin of these sports brands. Nike, Under Armour, and New Balance are all American brands; while Puma and Adidas are German brands.
+
+
+
+![](https://github.com/Ernestug/German-Sports-Shop/blob/main/Images/Overview.jpg)
+
+
+
+- **Time Analysis:** The Time Analysis Dashboard shows that more sales were made in Q1 than any other quarter, having close to 50% more sales in Q2. There was a decline in sales from Q2 to Q3, with a steady increase of 40% from Q3 to Q4. For the daily trend of sales, Tuesday and Wednesday had very low values of €30.3K and €41.3K respectively, compared to other days which had above €200K in sales. The time analysis also provided information on the Lead Time (the time or duration from initiating an order to delivering it to the customers). The maximum Lead Time is 42 days while the average is 9 days.
+
+
+
+![](https://github.com/Ernestug/German-Sports-Shop/blob/main/Images/Time%20Analysis.jpg)
+
+
+- **Products:** 77 products were sold in this analysis, with a total of 51,317 quantities ordered. Products under the Equipment category generated considerably higher values than other categories - amounting to 41.1% of sales made. Balls were rarely sold as they generated only 5% of sales. For the brands, the YoY sales shows a drop in sales for the top 2 sports brands in the world - Adidas and Nike; with Under Armour, Puma, and New Balance showing positive growth and an indication for more procurement. In addition, 4 out of the top 5 products by sales were from Puma, New Balance, and Under Armour. The YoY sales for product categories also showed the highest growth of 29.76% for Apparels. 3 out of the Top 5 products by sales were from this category. This indicates that apparels may provide more sales in the coming year.
+
+
+
+![](https://github.com/Ernestug/German-Sports-Shop/blob/main/Images/Products.jpg)
+
+
+
+- **Stakeholders:** The stakeholders involved in this analysis include the customers, employees, and shippers. QUICK-Stop, a retail sports firm based in Germany emerged as the top customer by sales, generating close to 10% of the total revenue. For employees, the % distribution of sales by job titles revealed that 71% of sales were completed by Sales Representatives, Sales and Manager and VP Sales had lower values of 15% and 13% respectively. For shippers, United Package emerges in top place with the highest shipping cost and the highest percentage of shipped quantities, followed by Federal Shipping and Speedy Express.
+
+
+
