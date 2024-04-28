@@ -147,3 +147,27 @@ Some Key Insights from the data visualization are summarized below:
 
 
 
+![](https://github.com/Ernestug/German-Sports-Shop/blob/main/Images/Stakeholders.jpg)
+
+
+
+## Conclusion
+
+In conclusion, the analysis of Sportsphere GmbH's sales records sheds light on the dynamic landscape of sports retailing in Germany. With a keen focus on best-selling products, brand performance, and stakeholder involvement, this project offers actionable insights to drive future growth and success in the ever-evolving world of sports commerce.
+
+
+## Recommendations
+
+From the analysis and key insights derived from this project, I was able to come up with the following recommendations to drive more sales in 2024:
+
+- **Procuring high-sales product categories:** For the product categories, the analysis shows that most sales (over 78%) were generated from Equipment and Apparel, it is recommended that in subsequent procurement of goods for the store, more funds should be channeled towards purchasing more inventory for this category as they generate more sales for the company.
+  
+- **Reducing Lead Time:** The Time Analysis shows that the average time between when an order is placed and shipped (Average Lead Time) is 9 days while the Maximum Lead Time is 42 days. To improve customer retention and satisfaction, it is recommended that the company devise strategic means to reduce its lead times. Some strategies include the automation of repetitive tasks like assembling and packaging, implementing a robust inventory management system, and practising "Cross-Docking" for high-demand goods where items are shipped directly from the suppliers to the customers.
+
+- **Strategic Discounting:** An observation of the Time Analysis with respect to the discounts revealed that the company incurred more discount costs in January, April, and December which translated to high sales in these months except for December which was slight lower than sales in January and April. For subsequent discounts, I recommend that the company targets months like June, July and August which had very low sales. These are months with little or no major sports activities ongoing and giving discounts could spur customers' interest. Discounts can also be given on specific days like Tuesday and Wednesday which recorded major decline in sales compared to other days.
+
+- **Procuring brands with high growth rate:** The YoY analysis on sales across the 5 sports brands revealed that the two major giants in the global sports market - Nike and Adidas showed a drop in sales from 2022 to 2023, while brands like Puma, Under Armour, and New Balance generated more in sales in 2023 than the previous year. This indicates that while the company targets product categories with more sales, there is a need to procure more inventory from brands showing a good growth potential in sales.
+
+- **Rewards for Top Performing Stakeholders:** Loyalty programs can be set up for top performing customers by sales where they enjoy discounts, specialized offers, or referral bonuses. This would greatly improve customer retention and satisfaction which translates to more sales. Top performing employees can also be rewarded with incentives or promotions, as a way of appreciation, and a means of driving motivation across all employees.
+
+- **Adjusting Shipping Costs:** The shipping cost per unit reveals that all shippers had varying costs with close values in their percentage of shipped orders. I recommended that the shipping costs for the 3 shippers be looked into for possible adjustment to have the shipping cost per unit within a close range. Cost-benefit analysis can also be carried out on the shippers to ascertain if alternative shippers can be onboarded or there is a need for continuity with the current shippers.
